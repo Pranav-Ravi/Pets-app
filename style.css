@@ -1,6 +1,7 @@
 :root{
     --BrandName: 'Ubuntu', sans-serif;
     --PrimaryFont: 'Montserrat', sans-serif;
+    --PrimaryColor: #3772ff;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
 }
 
 #title{
-    background-color: #3772ff;
+    background-color: var(--PrimaryColor);
 }
 
 .container-fluid{
@@ -24,6 +25,15 @@ h1{
     font-size: 3rem;
     line-height: 1.5;
     color:rgb(230, 252, 255);
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.feature-head{
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .navbar{
@@ -44,3 +54,16 @@ h1{
     margin: 5% 3% 5% 0;
 }
 
+.feature{
+    padding: 5% 15%;
+}
+
+.feature-icon{
+    font-size: 4rem;
+    color: #90defd;
+    padding-bottom: 20px;
+}
+
+.feature-icon:hover{
+    color: var(--PrimaryColor);
+}
