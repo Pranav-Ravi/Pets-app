@@ -2,6 +2,17 @@
     --BrandName: 'Ubuntu', sans-serif;
     --PrimaryFont: 'Montserrat', sans-serif;
     --PrimaryColor: #3772ff;
+    --SecondaryColor: #90defd;
+}
+
+@media only screen and (max-width: 500px){
+    h2.testimonial-heading{
+        font-size: 1.7rem;
+    }
+
+    img.press-img{
+        width: 25%;
+    }
 }
 
 body{
@@ -54,16 +65,46 @@ p{
     margin: 5% 3% 5% 0;
 }
 
-.feature{
-    padding: 5% 15%;
+#features{
+    padding: 7% 15%;
 }
 
 .feature-icon{
     font-size: 4rem;
-    color: #90defd;
+    color: var(--SecondaryColor);
     padding-bottom: 20px;
 }
 
 .feature-icon:hover{
     color: var(--PrimaryColor);
+}
+
+#testimonials
+{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: var(--SecondaryColor);
+    color: #fff;
+}
+
+.testimonial-heading{
+    font-size: 2.2rem;
+}
+
+.testimonial-img{
+    width: 20%;
+    border: #fff 3px solid;
+    border-radius: 50%;
+    margin: 30px 20px 20px 20px;
+}
+
+#press{
+    background-color: var(--SecondaryColor);
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-img{
+    width: 14%;
+    margin: 20px 20px 50px; 
 }
