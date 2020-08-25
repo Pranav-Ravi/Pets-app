@@ -5,6 +5,17 @@
     --SecondaryColor: #90defd;
 }
 
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+
+    img.title-img{
+        position: static;
+        transform: rotate(0);
+    }
+}
+
 @media only screen and (max-width: 500px){
     h2.testimonial-heading{
         font-size: 1.7rem;
@@ -12,6 +23,10 @@
 
     img.press-img{
         width: 25%;
+    }
+
+    h3.cta-title{
+        font-size: 3rem;
     }
 }
 
@@ -27,8 +42,12 @@ body{
     background-color: var(--PrimaryColor);
 }
 
-.container-fluid{
-    padding: 3% 15%;
+.title-img{
+    width: 60%; 
+    transform: rotate(25deg); 
+    padding: 10px 0;
+    position: absolute;
+    right: 35%;
 }
 
 h1{
@@ -40,11 +59,6 @@ h1{
 
 p{
     color: #8f8f8f;
-}
-
-.feature-head{
-    font-size: 1.7rem;
-    font-weight: bold;
 }
 
 .navbar{
@@ -67,6 +81,13 @@ p{
 
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+}
+
+.feature-head{
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .feature-icon{
@@ -114,7 +135,7 @@ p{
 
 #pricing{
     text-align: center;
-    padding: 7% 15%;
+    padding: 3% 15%;
 }
 
 .pricing-column{
@@ -128,4 +149,31 @@ p{
 .card-info{
     padding-bottom: 50px;
     max-height: 443px;
+}
+
+#cta{
+    background-color: var(--PrimaryColor); 
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.cta-title{
+    color: #fff;
+    font-style: var(--PrimaryFont);
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+#footer{
+    padding: 3.5% 15%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#footer p{
+    color: grey;
+}
+
+#footer fa{
+    padding: 10px 10px;
 }
